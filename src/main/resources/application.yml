@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: codesandbox
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/codesandbox?useSSL=false&serverTimezone=UTC&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    username: codesandbox
+    password: codesandbox123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
+
+  elasticsearch:
+    uris: http://localhost:9200
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: info
+    com.codesandbox: debug
