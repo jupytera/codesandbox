@@ -6,7 +6,7 @@ import lombok.*;                                    // Lombok注解
 import java.time.LocalDateTime;                     // 时间类
 
 @Entity
-@Table(name = "code_snippet")
+@Table(name = "code_snippets")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
